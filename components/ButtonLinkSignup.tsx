@@ -11,24 +11,24 @@ interface ButtonLinkSignupProps {
 const ButtonLinkSignup = ({ nomorHp }: ButtonLinkSignupProps) => {
   return (
     <View>
-      <Link href={"/login"} asChild>
+      <Link href={"/login"} replace asChild>
         <TouchableOpacity>
           <Text style={defaultStyles.textLink}>
             Udeh punya akun belom sebelum nye? Login
           </Text>
         </TouchableOpacity>
       </Link>
-      <View style={{ flex: 1 }} />
+      {/* <View style={{ flex: 1 }} />
 
       <TouchableOpacity
         style={[
           defaultStyles.pillButton,
           nomorHp !== "" ? styles.enabled : styles.disabled,
-          { marginBottom: 20 },
+          { bottom: 0 },
         ]}
       >
         <Text style={defaultStyles.buttonText}>Sign up</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };
